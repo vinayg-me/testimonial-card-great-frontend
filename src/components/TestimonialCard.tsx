@@ -34,9 +34,9 @@ const TestimonialCard: React.FC<TestimonialCardType> = (props) => {
             <div className="grid grid-rows-3 w-full">
                 <div className="grid row-span-1 grid-cols-4">
                     <div className="col-span-1 flex justify-center items-center">
-                        <img src={imgLogo} className="w-12 h-12 rounded-full" />
+                        <img src={imgLogo} alt="Testimonial Profile Picture" className="w-12 h-12 rounded-full" loading="lazy" />
                     </div>
-                    <div className="col-span-3 flex flex-col justify-center">
+                    <div className="col-span-3 flex flex-col justify-center break-words">
                         <p className="font-semibold text-left text-lg">{title}</p>
                         {subTitle && (<p className="text-left text-sm">{subTitle}</p>)}
                     </div>
